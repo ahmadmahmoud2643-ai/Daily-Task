@@ -384,7 +384,7 @@
   import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
   import { getFirestore, doc, getDoc, setDoc, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
-  const firebaseConfig={apiKey:"AIzaSyDsGwVYFMQrKE9xSMns40JuNJ_CEUkHGeA",authDomain:"daily-task-3b278.firebaseapp.com",projectId:"daily-task-3b278",storageBucket:"daily-task-3b278.firebasestorage.app",messagingSenderId:"975125596316",appId:"1:975125596316:web:bd2f12df4b81cd93f74559",measurementId:"G-W5PEHM5HHD"};
+  const firebaseConfig={apiKey:"AIzaSyDsGwVYFMQrKE9xSMns4OJuNJ_CEUkHGeA",authDomain:"daily-task-3b278.firebaseapp.com",projectId:"daily-task-3b278",storageBucket:"daily-task-3b278.firebasestorage.app",messagingSenderId:"975125596316",appId:"1:975125596316:web:bd2f12df4b81cd93f74559",measurementId:"G-W5PEHM5HHD"};
   const firebaseApp=initializeApp(firebaseConfig),auth=getAuth(firebaseApp),db=getFirestore(firebaseApp),provider=new GoogleAuthProvider();
   let currentUser=null,cloudReady=false,applyingRemote=false,unsubscribeCloud=null,saveTimer=null;
   const syncPill=document.getElementById("syncPill"),syncText=document.getElementById("syncText"),signInBtn=document.getElementById("signInBtn"),signOutBtn=document.getElementById("signOutBtn"),userChip=document.getElementById("userChip"),userName=document.getElementById("userName"),userPhoto=document.getElementById("userPhoto");
